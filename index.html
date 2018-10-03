@@ -6,23 +6,56 @@
       <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <img src="header bild.jpg" alt="Help me choose"/>
-    <h1>Vilken mat ska jag äta...</h1>
-      <div class="choose">
+    <img class="header"src="header bild.jpg" alt="Help me choose"/>
+    <h1></h1>
+      <div class="image">
+<div class="box">
       <img src="https://www.ica.se//icase.azureedge.net/imagevaultfiles/id_135156/cf_259/tunnbrodsrulle-med-varmkorv-och-rostad-lok-v15-720.jpg" width="100px" height="100px"alt="Varmkorv med bröd"/>
       <img src="https://www.ica.se//icase.azureedge.net/imagevaultfiles/id_89562/cf_259/hamburgare-med-klyftpotatis-v09-2014-717314.jpg" width="100px" height="100px"alt="hamburgare"/>
       <img src="https://www.ica.se//icase.azureedge.net/imagevaultfiles/id_67960/cf_259/maki-sushi-5532.jpg" width="100px" height="100px"alt="Sushi"/>
-      <br></br>
-    <button class="Korv">Korv med bröd?</button>
-    <button class="Hamburgare">Hamburgare?</button>
-    <button class="Hamburgare">Sushi?</button>
+</div>
+    <br></br>
+    </div>
+<div class="boxchoose">
+    <div class="choose">
+    <button class="addOption1">Korv?</button>
+    </div>
+    <div class="choose">
+    <button class="addOption1">Burgare?</button>
+  </div>
+  <div class="choose">
+    <button class="addOption1">Sushi?</button>
+  </div>
       </div>
+
       <div class="inputSection">
       <div class="inputs">
-        <input placeholder="What to eat?"></input>
+        <input placeholder="Skippa alla tre val och välj istället..."></input>
       </div>
+
       <button class="addOption">Add</button>
     </div>
-    <button class= "goOption">Go!</button>
+
+    <div class="resultSection"></div>
+
+    <button class= "addOption">Go!</button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+    $(function() {
+      $('.resultSection').hide()
+
+      var add_option = function () {
+        $('.inputs').append('<input></input>')
+      }
+
+      $('.addOption').click(add_option)
+    })
+
+    $( "header" ).click(function() {
+  $( this ).toggleClass( "brown" );
+});
+
+      </script>
   </body>
 </html>
