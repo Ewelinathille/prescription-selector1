@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: #06AF8F
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
+
+.inputSection {
+  margin: 50px 0px 50px 0px;
+  width: 400px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.choose{
+  align-items: center;
+}
+.inputs {
+  width: inherit;
+  display: flex;
+  flex direction: column;
+  font-style: italic;
+}
+
+input {
+  margin-top: 10px;
+  width: 100%;
+  font-family: cursive;
+  font-weight:lighter;
+}
+
+.addOption {
+  margin-top: 10px;
+  padding: 10px 120px 10px 120px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+
+}
+
+.goOption {
+  margin-top: 10px;
+  padding: 10px 120px 10px 120px;
+  background-color: #FFFFFF
+}

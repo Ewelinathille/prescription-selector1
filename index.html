@@ -3,19 +3,26 @@
   <head>
     <meta charset=utf-8>
     <title>Recipe selector</title>
+      <link href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <center>
-      <br><br><br></br>
-    <h1><img src="header bild.jpg" width="966" height="176" alt="Rubrik" title="Help me choose" /></h1>
-    <div>
-      <div>
-        <input placeholder="What to eat?"></input><br></br>
+    <img src="header bild.jpg" alt="Help me choose"/>
+    <h1>Vilken mat ska jag äta...</h1>
+      <div class="choose">
+      <img src="https://www.ica.se//icase.azureedge.net/imagevaultfiles/id_135156/cf_259/tunnbrodsrulle-med-varmkorv-och-rostad-lok-v15-720.jpg" width="100px" height="100px"alt="Varmkorv med bröd"/>
+      <img src="https://www.ica.se//icase.azureedge.net/imagevaultfiles/id_89562/cf_259/hamburgare-med-klyftpotatis-v09-2014-717314.jpg" width="100px" height="100px"alt="hamburgare"/>
+      <img src="https://www.ica.se//icase.azureedge.net/imagevaultfiles/id_67960/cf_259/maki-sushi-5532.jpg" width="100px" height="100px"alt="Sushi"/>
+      <br></br>
+    <button class="Korv">Korv med bröd?</button>
+    <button class="Hamburgare">Hamburgare?</button>
+    <button class="Hamburgare">Sushi?</button>
       </div>
-      <button>Add</button><br></br>
+      <div class="inputSection">
+      <div class="inputs">
+        <input placeholder="What to eat?"></input>
+      </div>
+      <button class="addOption">Add</button>
     </div>
-    <button>Go!</button><br><br></br>
-    <img src="http://www.destinationgotland.se/globalassets/ombordservice/ombordservice825px/ojburgare_825x500px.jpg" alt="'Food'" height="487" width="804">
-  </center>
+    <button class= "goOption">Go!</button>
   </body>
 </html>
