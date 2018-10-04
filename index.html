@@ -3,10 +3,10 @@
   <head>
     <meta charset=utf-8>
     <title>Recipe selector</title>
-      <link href="./main.css" rel="stylesheet" type="text/css">
+      <link class='picture' href="./main.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <img class="header"src="header bild.jpg" alt="Help me choose"/>
+    <img src="header bild.jpg" alt="Help me choose"/>
     <h1></h1>
       <div class="image">
 <div class="box">
@@ -38,7 +38,7 @@
 
     <div class="resultSection"></div>
 
-    <button class= "addOption">Go!</button>
+    <button class= "submit">Go!</button>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script>
@@ -48,14 +48,24 @@
       var add_option = function () {
         $('.inputs').append('<input></input>')
       }
-
       $('.addOption').click(add_option)
-    })
 
-    $( "header" ).click(function() {
-  $( this ).toggleClass( "brown" );
-});
 
-      </script>
+var options = []
+var submit = function () {
+  $('.inputSection').hide()
+  $('.boxchoose').hide()
+  $('.resultSection').css ('display', 'flex')
+  $('input').each(function (){
+    options.push($(this).val())
+  })
+  var winner = options[Math.floor(Math.random()* options.length)]
+
+  $('.resultSection').text(winner)
+
+}
+$('.submit').click(submit)
+})
+    </script>
   </body>
 </html>
